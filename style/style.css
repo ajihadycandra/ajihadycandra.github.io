@@ -1,12 +1,20 @@
 body {
-  background-color: #f3f3f3;
+  font-family: "Poppins", sans-serif;
 }
-#hero {
+
+section {
   padding-top: 6rem;
 }
-section {
-  padding-top: 5rem;
+
+.jumbotron {
+  min-height: 100vh;
+  padding-top: 6em;
+  background-color: var(--bs-body-bg);
 }
+
+.about {
+}
+
 footer {
   padding-top: 1rem;
 }

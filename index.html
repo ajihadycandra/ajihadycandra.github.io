@@ -6,21 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- My CSS -->
     <link rel="stylesheet" href="style/style.css" />
-
-    <!-- Bootstrap Icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
 
     <title>Aji Hady Candra</title>
   </head>
   <body id="home">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+    <nav class="navbar navbar-expand-lg shadow-sm fixed-top" style="background-color: var(--bs-body-bg)">
       <div class="container">
-        <a class="navbar-brand" href="#"> <img src="img/lg.png" alt="" width="40" height="40" class="rounded-circle" /></a>
+        <a class="navbar-brand" href="#"> <img src="img/lg.png" alt="" width="30" height="30" class="rounded-circle" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,13 +38,35 @@
               <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-sun-fill theme-icon-active" data-theme-icon-active="bi-sun-fill"></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <button class="dropdown-item d-flex align-items-center" type="button" data-bs-theme-value="light">
+                    <i class="bi bi-sun-fill me-2 opacity-50" data-theme-icon="bi-sun-fill"> Light</i>
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item d-flex align-items-center" type="button" data-bs-theme-value="dark">
+                    <i class="bi bi-moon-fill me-2 opacity-50" data-theme-icon="bi-moon-fill"> Dark</i>
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item d-flex align-items-center" type="button" data-bs-theme-value="auto">
+                    <i class="bi bi-circle-half me-2 opacity-50" data-theme-icon="bi-circle-half"> Auto</i>
+                  </button>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -45,89 +75,143 @@
     <!-- Navbar End -->
 
     <!-- Hero -->
-    <section id="hero">
+    <section class="jumbotron jumbotron-fluid">
       <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-9">
-            <div class="jumbotron">
-              <h1 class="display-4 fw-bold mb-4">Hello, I'm,</h1>
-              <h1 class="display-4 fw-bold mb-4">Aji Hady Candra</h1>
-              <p class="lead fs-4 fw-light mb-4">Junior UI/UX Designer</p>
-              <hr class="my-2 shadow-sm mb-5" />
-              <a class="btn btn-light btn-lg rounded-pill" href="#projects" role="button"><i class="bi bi-arrow-down"></i></a>
-            </div>
-          </div>
+        <div class="jumbotron text-start">
+          <h1 class="display-3 fw-bold"></h1>
+          <h1 class="display-4 fw-bold"></h1>
+          <hr class="my-2 shadow-sm" />
+          <p class="lead"></p>
         </div>
       </div>
     </section>
     <!-- Hero End -->
 
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row text-start mb-2">
+          <div class="col">
+            <h2>About Me</h2>
+          </div>
+        </div>
+        <div class="row text-start">
+          <div class="col">
+            <h4>Aji Hady Candra</h4>
+            <p>Junior UI/UX Design</p>
+          </div>
+        </div>
+        <hr class="my-2 shadow-sm mb-4" />
+        <div class="row justify-content-center fs-5 text-start mb-5">
+          <div class="col-md-7" data-aos="fade-right">
+            <p>Pengalanan sebagai Admin Sistem Informasi Manajemen kurang lebih 3 tahun, dan berkeinginan untuk mengembangkan karir sebagai UI/UX Designer.</p>
+            <p>Mengikuti beberapa pelatihan untuk menambah keterampilan dan pengetahuan yang berkaitan dengan UI/UX Design.</p>
+            <p>Memiliki passion dalam pembuatan strategi design, wireframe, prototyping, dan user flow. Kreatifitas dan mampu memberikan ide unik selama proses design.</p>
+          </div>
+          <div class="col-md-5" data-aos="fade-left" data-aos-delay="200">
+            <img src="img/Projects/Profile.png" class="img-fluid" alt="Profile" />
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row text-start">
+          <div class="col">
+            <h4>Software & Skill</h4>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-5 text-start">
+          <div class="col-md-7" data-aos="fade-right">
+            <p>Main Software</p>
+          </div>
+          <div class="col-md-5" data-aos="fade-left" data-aos-delay="200">
+            <p>Figma, Adobe Xd, Adobe Illustrator, Adobe Photoshop, Microsoft Office.</p>
+            <p>JavaScript, CSS, HTML.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-5 text-start">
+          <div class="col-md-7" data-aos="fade-right">
+            <p>Main Skills</p>
+          </div>
+          <div class="col-md-5" data-aos="fade-left" data-aos-delay="200">
+            <p>Design Thinking, Wireframing, Prototyping, Design Research, User Research</p>
+            <p>Problem Solving, Komunikasi, Teamworking, Kolaborasi</p>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-5 text-start">
+          <div class="col-md-7" data-aos="fade-right">
+            <p>Resume</p>
+          </div>
+          <div class="col-md-5" data-aos="fade-left" data-aos-delay="200">
+            <p><a href="https://drive.google.com/file/d/1cj9KC701DEXmIIajJv_hlyDJxnjrT0eM/view?usp=sharing">View Resume</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About End -->
+
     <!-- Projects -->
     <section id="projects">
       <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div id="article" class="col-md-9">
-            <div class="row g-0">
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h5 class="card-title text-uppercase mb-3">01 | Design: Web Small Medium</h5>
-                  <p class="card-text fs-5 mb-3">Website Small Medium yang dibuat merupakan tampilan design yang dibuat dengan menggunakan Bootstrap 5 dengan mengikuti pembelajaran di Skilvul.</p>
-                  <p class="card-text fs-5 fw-light mb-3">Membuat design website small medium dengan Bootstrap 5.</p>
-                  <div class="card-text row">
-                    <div class="col-md">
-                      <a href="https://ajihadycandra.github.io/design-web-smallmedium/" class="card-link fs-5">More shots from this project <i class="bi bi-box-arrow-up-right"></i> </a>
-                    </div>
-                  </div>
-                </div>
+        <div class="row text-start mb-2">
+          <div class="col">
+            <h2>Projects</h2>
+          </div>
+        </div>
+        <hr class="my-2 shadow-sm mb-4" />
+
+        <div class="card justify-content-center mb-3">
+          <div class="row g-0">
+            <div class="col-md-7">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="https://ajihadycandra.github.io/design-web-smallmedium/" class="card-link text-decoration-none"> 01 | Design: Web Small Medium </a>
+                </h5>
+                <p class="card-text">Website Small Medium yang dibuat merupakan tampilan design yang dibuat dengan menggunakan Bootstrap 5 dengan mengikuti pembelajaran di Skilvul.</p>
+                <p class="card-text">Membuat design website small medium dengan Bootstrap 5.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
-              <div class="col-md-6">
-                <img src="img/Projects/1.jpg" class="img-fluid rounded-start" alt="Projects 1" />
-              </div>
+            </div>
+            <div class="col-md-5">
+              <img src="img/Projects/1.jpg" class="img-fluid rounded-start" alt="Project 1" />
             </div>
           </div>
         </div>
-        <div class="row justify-content-center mb-5">
-          <div id="article" class="col-md-9">
-            <div class="row g-0">
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h5 class="card-title text-uppercase mb-3">02 | UI/UX Case Study: Krealogi by Du Anyam</h5>
-                  <p class="card-text fs-5 mb-3">
-                    Proyek ini adalah bagian dari program pelatihan UI/UX Design di Skilvul, untuk Program Digital Talent Scholarship yang diselenggarakan oleh Kementerian Komunikasi dan Informatika. Krealogi merupakan Challenges Partner.
-                  </p>
-                  <p class="card-text fs-5 fw-light mb-3">Membuat desain aplikasi yang lebih friendly untuk tipe user Krealogi yakni vendor, producer dan juga seller.</p>
-                  <div class="card-text row">
-                    <div class="col-md">
-                      <a href="https://medium.com/@ajihadycandra/ui-ux-case-study-krealogi-by-du-anyam-e6601a5a2af9" class="card-link fs-5">See case study <i class="bi bi-box-arrow-up-right"></i> </a>
-                    </div>
-                  </div>
-                </div>
+
+        <div class="card justify-content-center mb-3">
+          <div class="row g-0">
+            <div class="col-md-7">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="https://medium.com/@ajihadycandra/ui-ux-case-study-krealogi-by-du-anyam-e6601a5a2af9" class="card-link text-decoration-none"> 02 | UI/UX Case Study: Krealogi by Du Anyam </a>
+                </h5>
+                <p class="card-text">
+                  Proyek ini adalah bagian dari program pelatihan UI/UX Design di Skilvul, untuk Program Digital Talent Scholarship yang diselenggarakan oleh Kementerian Komunikasi dan Informatika. Krealogi merupakan Challenges Partner.
+                </p>
+                <p class="card-text">Membuat desain aplikasi yang lebih friendly untuk tipe user Krealogi yakni vendor, producer dan juga seller.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
-              <div class="col-md-6">
-                <img src="img/Projects/2.jpg" class="img-fluid rounded-start" alt="Projects 2" />
-              </div>
+            </div>
+            <div class="col-md-5">
+              <img src="img/Projects/2.jpg" class="img-fluid rounded-start" alt="Project 2" />
             </div>
           </div>
         </div>
-        <div class="row justify-content-center mb-5">
-          <div id="article" class="col-md-9">
-            <div class="row g-0">
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h5 class="card-title text-uppercase mb-3">03 | Design: landingpage</h5>
-                  <p class="card-text fs-5 mb-3">Membuat design landingpage untuk membuat menjadi lebih produktif</p>
-                  <p class="card-text fs-5 fw-light mb-3">Design landingpage: Membuat menjadi lebih produktif</p>
-                  <div class="card-text row">
-                    <div class="col-md">
-                      <a href="https://www.behance.net/gallery/157764721/DESIGN-LANDINGPAGE" class="card-link fs-5">See case study <i class="bi bi-box-arrow-up-right"></i> </a>
-                    </div>
-                  </div>
-                </div>
+
+        <div class="card justify-content-center">
+          <div class="row g-0">
+            <div class="col-md-7">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="https://www.behance.net/gallery/157764721/DESIGN-LANDINGPAGE" class="card-link text-decoration-none"> 03 | Design: landingpage </a>
+                </h5>
+                <p class="card-text">Membuat design landingpage untuk membuat menjadi lebih produktif</p>
+                <p class="card-text">Design landingpage: Membuat menjadi lebih produktif</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
-              <div class="col-md-6">
-                <img src="img/Projects/3.jpg" class="img-fluid rounded-start" alt="Projects 3" />
-              </div>
-              <!-- <hr class="my-2 shadow-sm" /> -->
+            </div>
+            <div class="col-md-5">
+              <img src="img/Projects/3.jpg" class="img-fluid rounded-start" alt="Project 3" />
             </div>
           </div>
         </div>
@@ -135,74 +219,43 @@
     </section>
     <!-- Projects End -->
 
-    <!-- About -->
-    <section id="about">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div id="article" class="col-md-9">
-            <div class="row justify-content-between">
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h5 class="card-title fs-2 mb-3">Hi, I’m Aji, Junior UI/UX Design.</h5>
-                  <p class="card-text fs-5 fw-light mb-3">Pengalanan sebagai Admin Sistem Informasi Manajemen kurang lebih 3 tahun, dan berkeinginan untuk mengembangkan karir sebagai UI/UX Designer.</p>
-                  <p class="card-text fs-5 fw-light mb-3">Mengikuti beberapa pelatihan untuk menambah keterampilan dan pengetahuan yang berkaitan dengan UI/UX Design.</p>
-                  <p class="card-text fs-5 fw-light mb-3">Memiliki passion dalam pembuatan strategi design, wireframe, prototyping, dan user flow. Kreatifitas dan mampu memberikan ide unik selama proses design.</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <img src="img/Projects/Profile.png" class="img-fluid" alt="Profile" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row justify-content-center mb-3">
-          <div id="article" class="col-md-9">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <p class="card-title fs-5 fw-bolder text-decoration-underline mb-3">Main Software</p>
-              </div>
-              <div class="col-md-6">
-                <p class="card-title fs-5 fw-light mb-3">Figma, Adobe Xd, Adobe Illustrator, Adobe Photoshop, Microsoft Office.</p>
-                <p class="card-title fs-5 fw-light mb-3">JavaScript, CSS, HTML.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center mb-3">
-          <div id="article" class="col-md-9">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <p class="card-title fs-5 fw-bolder text-decoration-underline mb-3">Main Skills</p>
-              </div>
-              <div class="col-md-6 mb-3">
-                <p class="card-title fs-5 fw-light mb-3">Design Thinking, Wireframing, Prototyping, Design Research, User Research</p>
-                <p class="card-title fs-5 fw-light mb-3">Problem Solving, Komunikasi, Teamworking, Kolaborasi</p>
-              </div>
-            </div>
-            <hr class="my-2 shadow-sm" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- About End -->
-
     <!-- Contact -->
     <section id="contact">
       <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div id="article" class="col-md-9">
-            <div class="row g-0">
-              <div class="col-md-6">
-                <h5 class="card-title fs-3 mb-3">I am thrilled to answer to any questions <i class="bi bi-arrow-right"></i></h5>
-              </div>
-              <div class="col-md-3">
-                <p class="card-title fs-4 fw-light mb-3">ajihadycandra@gmail.com</p>
-                <p class="card-title fs-5 text-dark mb-3"><a href="https://drive.google.com/file/d/1cj9KC701DEXmIIajJv_hlyDJxnjrT0eM/view?usp=sharing">View Resume</a></p>
-              </div>
+        <div class="row text-start mb-2">
+          <div class="col">
+            <h2>Contact Me</h2>
+          </div>
+        </div>
+        <hr class="my-2 shadow-sm mb-4" />
+
+        <div class="row mb-5">
+          <div class="col-md-6">
+            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+              <strong>Terimakasih!</strong> Pesan Anda sudah kami terima.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-            <hr class="my-2 shadow-sm" />
+
+            <form name="az-contact-form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -229,6 +282,97 @@
     <!-- Footer End -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const galleryImage = document.querySelectorAll(".gallery-img");
+
+      galleryImage.forEach((img, i) => {
+        img.dataset.aos = "fade-down";
+        img.dataset.aosDelay = i * 100;
+        img.dataset.aosDuration = 1000;
+      });
+
+      AOS.init({
+        once: true,
+        duration: 2000,
+      });
+    </script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".display-3", { duration: 1, delay: 1, text: "Hallo!" });
+      gsap.to(".display-4", { duration: 1.5, delay: 1.5, text: "Everyone" });
+      gsap.to(".lead", { duration: 1.5, delay: 1.5, text: "Junior UI/UX Designer" });
+      gsap.from(".jumbotron img", { duration: 1, rotateY: 360, opacity: 0 });
+      gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce" });
+      // gsap.from(".display-4", { duration: 1, x: "-50%", opacity: 0, delay: 0.5, ease: "back" });
+    </script>
+
+    <!-- Dark Mode -->
+    <script>
+      (() => {
+        "use strict";
+
+        const storedTheme = localStorage.getItem("theme");
+
+        const getPreferredTheme = () => {
+          if (storedTheme) {
+            return storedTheme;
+          }
+
+          return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        };
+
+        const setTheme = function (theme) {
+          if (theme === "auto" && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            document.documentElement.setAttribute("data-bs-theme", "dark");
+          } else {
+            document.documentElement.setAttribute("data-bs-theme", theme);
+          }
+        };
+
+        setTheme(getPreferredTheme());
+
+        const showActiveTheme = (theme) => {
+          const activeThemeIcon = document.querySelector(".theme-icon-active");
+          const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`);
+          const iconOfActiveBtn = btnToActive.querySelector("i").dataset.themeIcon;
+
+          document.querySelectorAll("[data-bs-theme-value]").forEach((element) => {
+            element.classList.remove("active");
+          });
+
+          btnToActive.classList.add("active");
+          activeThemeIcon.classList.remove(activeThemeIcon.dataset.themeIconActive);
+          activeThemeIcon.classList.add(iconOfActiveBtn);
+          activeThemeIcon.dataset.iconActive = iconOfActiveBtn;
+        };
+
+        window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+          if (storedTheme !== "light" || storedTheme !== "dark") {
+            setTheme(getPreferredTheme());
+          }
+        });
+
+        window.addEventListener("DOMContentLoaded", () => {
+          showActiveTheme(getPreferredTheme());
+
+          document.querySelectorAll("[data-bs-theme-value]").forEach((toggle) => {
+            toggle.addEventListener("click", () => {
+              const theme = toggle.getAttribute("data-bs-theme-value");
+              localStorage.setItem("theme", theme);
+              setTheme(theme);
+              showActiveTheme(theme);
+            });
+          });
+        });
+      })();
+    </script>
   </body>
 </html>

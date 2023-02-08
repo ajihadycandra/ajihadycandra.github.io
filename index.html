@@ -78,8 +78,8 @@
     <section class="jumbotron jumbotron-fluid">
       <div class="container">
         <div class="jumbotron text-start">
-          <h1 class="display-3 fw-bold"></h1>
-          <h1 class="display-4 fw-bold"></h1>
+          <h1 class="display-1"></h1>
+          <h1 class="display-2"></h1>
           <hr class="my-2 shadow-sm" />
           <p class="lead"></p>
         </div>
@@ -115,7 +115,7 @@
       </div>
 
       <div class="container">
-        <div class="row text-start">
+        <div class="row text-start mb-2">
           <div class="col">
             <h4>Software & Skill</h4>
           </div>
@@ -138,7 +138,7 @@
             <p>Problem Solving, Komunikasi, Teamworking, Kolaborasi</p>
           </div>
         </div>
-        <div class="row justify-content-center fs-5 text-start">
+        <div class="row justify-content-center fs-5 text-start mb-5">
           <div class="col-md-7" data-aos="fade-right">
             <p>Resume</p>
           </div>
@@ -160,7 +160,7 @@
         </div>
         <hr class="my-2 shadow-sm mb-4" />
 
-        <div class="card justify-content-center mb-3">
+        <div class="card justify-content-center mb-3" data-aos="zoom-in">
           <div class="row g-0">
             <div class="col-md-7">
               <div class="card-body">
@@ -178,7 +178,7 @@
           </div>
         </div>
 
-        <div class="card justify-content-center mb-3">
+        <div class="card justify-content-center mb-3" data-aos="zoom-in">
           <div class="row g-0">
             <div class="col-md-7">
               <div class="card-body">
@@ -198,7 +198,7 @@
           </div>
         </div>
 
-        <div class="card justify-content-center">
+        <div class="card justify-content-center" data-aos="zoom-in">
           <div class="row g-0">
             <div class="col-md-7">
               <div class="card-body">
@@ -336,9 +336,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
     <script>
       gsap.registerPlugin(TextPlugin);
-      gsap.to(".display-3", { duration: 1, delay: 1, text: "Hallo!" });
-      gsap.to(".display-4", { duration: 1.5, delay: 1.5, text: "Everyone" });
-      gsap.to(".lead", { duration: 1.5, delay: 1.5, text: "Junior UI/UX Designer" });
+      gsap.to(".display-1", { duration: 1.5, delay: 1, text: "Hallo!" });
+      gsap.to(".display-2", { duration: 1.5, delay: 2, text: "Everyone" });
+      gsap.to(".lead", { duration: 1.5, delay: 3, text: "Im, Aji Hady Candra | Junior UI/UX Designer" });
       gsap.from(".jumbotron img", { duration: 1, rotateY: 360, opacity: 0 });
       gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce" });
       // gsap.from(".display-4", { duration: 1, x: "-50%", opacity: 0, delay: 0.5, ease: "back" });

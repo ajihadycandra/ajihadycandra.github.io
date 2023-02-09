@@ -7,8 +7,9 @@ section {
 }
 
 .jumbotron {
-  min-height: 100vh;
+  min-height: 90vh;
   padding-top: 6em;
+  padding-bottom: 5rem;
   background-color: var(--bs-body-bg);
 }
 
